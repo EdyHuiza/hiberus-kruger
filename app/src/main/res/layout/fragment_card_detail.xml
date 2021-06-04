@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewCardName"
+        style="@style/textViewStyleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_label_vertical_spacing"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewCard"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:id="@+id/textViewCardType"
+        style="@style/textViewStyleSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_label_vertical_spacing"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/textViewCardDetail"
+        style="@style/textViewStyleDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_label_vertical_spacing"
+        android:gravity="center" />
+
+</LinearLayout>

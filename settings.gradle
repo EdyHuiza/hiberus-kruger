@@ -1,0 +1,2 @@
+rootProject.name = "hiberus-kruger-app"
+include ':app'

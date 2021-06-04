@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="com.hiberus.kruger.hiberuskrugerapp.ui.main.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_companiesScreen_to_deliveriesScreen"
+            app:destination="@id/cardListScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cardListScreen"
+        android:name="com.hiberus.kruger.hiberuskrugerapp.ui.main.card.list.CardListFragment"
+        android:label="Cartas"
+        tools:layout="@layout/fragment_card_list">
+        <action
+            android:id="@+id/action_deliveriesScreen_to_deliveryFormScreen"
+            app:destination="@id/cardDetailScreen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cardDetailScreen"
+        android:name="com.hiberus.kruger.hiberuskrugerapp.ui.main.card.detail.CardDetailFragment"
+        android:label="Detalle"
+        tools:layout="@layout/fragment_card_detail" />
+</navigation>

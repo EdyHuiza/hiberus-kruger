@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewName"
+        style="@style/textViewStyleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_label_vertical_spacing"
+        android:gravity="center"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        style="@style/textViewStyleSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_label_vertical_spacing"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textViewDateDevelop"
+        style="@style/textViewStyleSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/input_label_vertical_spacing"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@color/colorPrimary"
+        android:text="@string/btn_card_list"
+        android:textColor="@color/primaryButtonTextColor"
+        android:textStyle="bold" />
+</LinearLayout>
